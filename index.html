@@ -6,9 +6,138 @@
     <title>JAVA SCRIPT</title>
 </head>
 <body>
-    
+
 
 
     <script src="javascript.js"></script>
+
+  <!--operators-->
+
+  <h1>Operators in JavaScript</h1>
+  <script src="javascript.js"></script>
+
+
+
+  <!--ternary operator-->
+
+  <h1>finding largest of the three numbers </h1>
+    <script>
+        var a = 10;
+        var b = 20;
+        var c = 15;
+        document.write("The numbers are: " + a + ", " + b + ", " + c + "<br>");
+
+        document.write("The largest number is: " + (a > b ? (a > c ? a : c) : (b > c ? b : c)));
+    </script>
+
+
+
+
+
+
+    <script type="text/javascript">
+        var count ;
+        document.write("string loop" + "<br>");
+        for (count = 0; count < 10; count++) {
+            document.write("current count : " + count );
+            document.write("<br>");
+        }
+        document.write("loop stopped</br></br>");
+
+    </script>
+     <!--for in loop-->
+     
+     
+    <script type="text/javascript">
+        const person = {
+            name: "ajay",
+            lname:"singh",
+            age: 25,
+        };
+        
+        for (let x in person) {
+            console.log(  "personal details " +x + ": " + person[x]);
+            
+        }
+       </script> 
+       <!--switch-->
+    <script type="text/javascript">
+        var grade = 'A';
+        switch (grade) {
+            case 'A':
+                document.write("Excellent</br>");
+                break;
+            case 'B':
+                document.write("Good");
+                break;
+            case 'C':
+                document.write("Fair");
+                break;
+            case 'D':
+                document.write("Poor");
+                break;
+            case 'F':
+                document.write("Fail");
+                break;
+            default:
+                document.write("Invalid grade</br>");
+        }
+        document.write("exiting switch block </br></br>" );
+    </script>  
+    
+    <!--function-->
+    <script>
+        function myFunction() {
+          alert("Hello World!");
+        }
+
+      </script>  
+      <button onclick="myFunction()">try it </button>
+      <br><br>
+    <script> 
+        function sayhello(name , age ) {
+          alert("Hello " + name + " , " + " so you are " + age + " years old!");
+        }
+    </script>
+      <form>
+        <input type="button" onclick = " sayhello('Zara',7)" value = " say hello">
+      </form>
+      <!--normal function-->
+    <script>
+        function add (a, b) {
+        console.log(a + b);
+
+      }
+      add(3,7);
+    </script>
+      <!--arrow function-->
+    <script>
+        const add = (a, b) => {
+          console.log(a + b);
+        }
+        add(3, 7);
+    </script>
+      <!--object is collection of anything-->
+       
+    <script type="text/javascript">
+      var Person = {
+          name: "John",
+          age: 30,
+          isMarried: true,
+
+          address : {
+            street : 'vijay nagar',
+
+            flatno : 201
+          }
+      };
+      console.log(Person); // Output: John
+    </script>
+    <script type="text/javascript">
+      var myinfo = new Array();
+      myinfo[0] = 'ajay' ;
+    </script>
+
+      
 </body>
 </html>
